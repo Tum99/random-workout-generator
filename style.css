@@ -1,0 +1,158 @@
+/*
+
+
+Global Styles
+
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f7f7f5;
+    color: #1d2220;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*
+
+Workout Generator
+
+*/
+
+.workout-generator {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0rem;
+}
+
+.workout-generator-header {
+    text-align: center;
+}
+
+.workout-generator-heading {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.workout-generator-intro {
+    color: #6D7471;
+    line-height: 1.5;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.generate-workout-btn {
+    width: 100%;
+    background-color: #217A4D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 1.2rem;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+/*
+
+Workout Card
+
+*/
+
+.workout-card {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.workout-label {
+    color: #217A4D;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.workout-name {
+    font-size: 32px;
+    margin-bottom: .7rem;
+}
+
+.workout-description {
+    color: #6D7471;
+    line-height: 1.6;
+}
+
+
+/*
+
+Exercise List
+
+*/
+
+.exercise-list {
+    border: 1px solid #dedede;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.exercise-list-item {
+    padding: 1.3rem;
+    border-bottom: 1px solid #dedede;
+    font-weight: 600;
+}
+
+.exercise-list-item:last-child {
+    border-bottom: none;
+}
+
+
+/*
+
+Media Queries
+
+*/
+
+@media screen and (max-width: 767px){
+    .workout-generator-heading {
+        font-size: 36px;
+    }
+
+    .workout-card {
+        padding: 1.5rem;
+    }
+
+    .workout-name {
+        font-size: 24px;
+    }
+
+    .exercise-list-item {
+        padding: 1.1rem;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
